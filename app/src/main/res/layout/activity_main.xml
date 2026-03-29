@@ -23,45 +23,206 @@
         android:id="@+id/imageLogo"
         android:layout_width="81dp"
         android:layout_height="81dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/textSerires"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textMinhalista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Filmes"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        android:text="Minha lista"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="@+id/textFilmes"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toEndOf="@+id/textFilmes"
+        app:layout_constraintTop_toTopOf="@+id/textFilmes" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textSerires"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Séries"
+        android:textColor="@color/menu_navegacao"
         app:layout_constraintBottom_toBottomOf="@+id/imageLogo"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/textFilmes"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageLogo"
         app:layout_constraintTop_toTopOf="@+id/imageLogo" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textFilmes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Minha lista"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        android:text="Filmes"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="@+id/textSerires"
+        app:layout_constraintEnd_toStartOf="@+id/textMinhalista"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textSerires"
+        app:layout_constraintTop_toTopOf="@+id/textSerires" />
+
+    <Button
+        android:id="@+id/buttonAssistir"
+        android:layout_width="125dp"
+        android:layout_height="51dp"
+        android:text="Assistir"
+        app:icon="@drawable/icplay"
+        app:iconSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMinhalista"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDetalhes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonMinhalista"
+        app:layout_constraintTop_toTopOf="@+id/buttonMinhalista" />
+
+    <Button
+        android:id="@+id/buttonMinhalista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="0dp"
+        android:text="MINHA LISTA"
+        android:textSize="16dp"
+        app:icon="@drawable/icplus"
+        app:iconGravity="top"
+        app:iconSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCapa"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAssistir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageCapa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <Button
+        android:id="@+id/buttonDetalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="0dp"
+        android:text="DETALHES"
+        android:textSize="16dp"
+        app:icon="@drawable/icinfo"
+        app:iconGravity="top"
+        app:iconSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAssistir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toEndOf="@+id/buttonAssistir"
+        app:layout_constraintTop_toTopOf="@+id/buttonAssistir"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/textAventura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aventura"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="@+id/textPoder"
+        app:layout_constraintEnd_toStartOf="@+id/textAcao"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textPoder"
+        app:layout_constraintTop_toTopOf="@+id/textPoder" />
+
+    <TextView
+        android:id="@+id/textAcao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ação"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="@+id/textAventura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textAventura"
+        app:layout_constraintTop_toTopOf="@+id/textAventura" />
+
+    <TextView
+        android:id="@+id/textPoder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poder"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCapa"
+        app:layout_constraintEnd_toStartOf="@+id/textAventura"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="93dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCapa"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/f1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="93dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/f3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="93dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/f5" />
+
+    <TextView
+        android:id="@+id/textLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lançamento"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCapa"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396"
+        app:srcCompat="@drawable/logolot" />
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danilo Amorim Dalvi"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
