@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/imageCapa"
         android:layout_width="match_parent"
-        android:layout_height="276dp"
+        android:layout_height="375dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -23,6 +23,7 @@
         android:id="@+id/imageLogo"
         android:layout_width="81dp"
         android:layout_height="81dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toStartOf="@+id/textSerires"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +97,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageCapa"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.641" />
+        app:layout_constraintVertical_bias="0.673" />
 
     <Button
         android:id="@+id/buttonDetalhes"
@@ -151,7 +152,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673" />
+        app:layout_constraintVertical_bias="0.671" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -211,7 +212,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396"
+        app:layout_constraintVertical_bias="0.444"
         app:srcCompat="@drawable/logolot" />
 
     <TextView
@@ -224,5 +225,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="22dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="381dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
